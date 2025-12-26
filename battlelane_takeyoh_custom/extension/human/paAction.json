@@ -1,0 +1,1349 @@
+{
+  tatsumi = {
+    {
+      target = "man2",
+      actions = {
+        { 
+          action = "walking.ksanim", 
+          start = vec3(5908.69, 24.67, -4663.63), 
+          finish = vec3(5893.63, 24.18, -4657.60), 
+          direction = vec3(-1, 0, 0.3), 
+          duration = 20, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(5893.63, 24.18, -4657.60), 
+          finish = vec3(5893.63, 24.18, -4657.60), 
+          direction = vec3(-1, 0, 0.3), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(5893.63, 24.18, -4657.60), 
+          finish = vec3(5908.69, 24.67, -4663.63), 
+          direction = vec3(1, 0, -0.3), 
+          duration = 20, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(5908.69, 24.67, -4663.63), 
+          finish = vec3(5908.69, 24.67, -4663.63), 
+          direction = vec3(1, 0, -0.3), 
+          duration = 2, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "man4",
+      actions = {
+        { 
+          action = "phone.ksanim", 
+          start = vec3(5915.04, 24.87, -4667.08), 
+          finish = vec3(5915.04, 24.87, -4667.08), 
+          direction = vec3(1, 0, 0.3), 
+          duration = 20, 
+          loopTime = 30 
+        },
+      }
+    },
+    {
+      target = "man1",
+      actions = {
+        { 
+          action = "talking1.ksanim", 
+          start = vec3(5890.54, 24.09, -4657.01), 
+          finish = vec3(5890.54, 24.09, -4657.01), 
+          direction = vec3(-1, 0, -0.5), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl3",
+      actions = {
+        { 
+          action = "talking1f.ksanim", 
+          start = vec3(5889.42, 24.07, -4657.36), 
+          finish = vec3(5889.42, 24.07, -4657.36), 
+          direction = vec3(0.3, 0, 1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man3",
+      actions = {
+        { 
+          action = "drink.ksanim", 
+          start = vec3(5862.95, 23.08, -4643.25), 
+          finish = vec3(5862.95, 23.08, -4643.25), 
+          direction = vec3(1, 0, 1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(5862.95, 23.08, -4643.25), 
+          finish = vec3(5853.16, 22.71, -4639.14), 
+          direction = vec3(-1, 0, 0.4), 
+          duration = 14, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(5853.16, 22.71, -4639.14), 
+          finish = vec3(5862.95, 23.08, -4643.25), 
+          direction = vec3(1, 0, -0.4), 
+          duration = 14, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "girl1",
+      actions = {
+        { 
+          action = "sittingf.ksanim", 
+          start = vec3(5864.97, 23.14, -4642.68), 
+          finish = vec3(5864.97, 23.14, -4642.68), 
+          direction = vec3(-1, 0, -1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl4",
+      actions = {
+        { 
+          action = "phone2f.ksanim", 
+          start = vec3(5865.11, 23.10, -4639.88), 
+          finish = vec3(5865.11, 23.10, -4639.88), 
+          direction = vec3(-1, 0, -0.5), 
+          duration = 35, 
+          loopTime = 35 
+        },
+      }
+    },
+    {
+      target = "girl2",
+      actions = {
+        { 
+          action = "phonef.ksanim", 
+          start = vec3(5904.03, 24.53, -4662.82), 
+          finish = vec3(5904.03, 24.53, -4662.82), 
+          direction = vec3(1, 0, -1), 
+          duration = 15, 
+          loopTime = 15 
+        },
+      }
+    },
+    {
+      target = "man5",
+      actions = {
+        { 
+          action = "talking2.ksanim", 
+          start = vec3(5905.11, 24.57, -4663.34), 
+          finish = vec3(5905.11, 24.57, -4663.34), 
+          direction = vec3(-1, 0, 1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man6",
+      actions = {
+        { 
+          action = "standing.ksanim", 
+          start = vec3(5910.06, 24.72, -4665.14), 
+          finish = vec3(5910.06, 24.72, -4665.14), 
+          direction = vec3(0, 0, -1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+        { 
+          action = "drink.ksanim", 
+          start = vec3(5910.06, 24.72, -4665.14), 
+          finish = vec3(5910.06, 24.72, -4665.14), 
+          direction = vec3(0, 0, -1), 
+          duration = 10, 
+          loopTime = 10 
+        },
+      }
+    },
+  },
+  shibaura = {
+    {
+      target = "man7",
+      actions = {
+        { 
+          action = "drink.ksanim", 
+          start = vec3(1094.82, 25.1, -4675.76), 
+          finish = vec3(1094.82, 25.1, -4675.76), 
+          direction = vec3(0, 0, -1), 
+          duration = 10, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl4",
+      actions = {
+        { 
+          action = "thinkingf.ksanim", 
+          start = vec3(1095.11, 25.1, -4679.8), 
+          finish = vec3(1095.11, 25.1, -4679.8), 
+          direction = vec3(-1, 0, 0), 
+          duration = 10, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man5",
+      actions = {
+        { 
+          action = "sitting.ksanim", 
+          start = vec3(1093.05, 25.1, -4685.15), 
+          finish = vec3(1093.05, 25.1, -4685.15), 
+          direction = vec3(1, 0, 0), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man8",
+      actions = {
+        { 
+          action = "talking2.ksanim", 
+          start = vec3(1094.29, 25.1, -4697.75), 
+          finish = vec3(1094.29, 25.1, -4697.75), 
+          direction = vec3(0, 0, -1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl3",
+      actions = {
+        { 
+          action = "talking2f.ksanim", 
+          start = vec3(1094.43, 25.1, -4699.55), 
+          finish = vec3(1094.43, 25.1, -4699.55), 
+          direction = vec3(0, 0, 1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man9",
+      actions = {
+        { 
+          action = "phone.ksanim", 
+          start = vec3(1094.64, 25.1, -4734.13), 
+          finish = vec3(1094.64, 25.1, -4734.13), 
+          direction = vec3(1, 0, 0), 
+          duration = 20, 
+          loopTime = 30 
+        },
+      }
+    },
+    {
+      target = "girl2",
+      actions = {
+        { 
+          action = "walkingf.ksanim", 
+          start = vec3(1094.43, 25.1, -4736.8), 
+          finish = vec3(1094.58, 25.08, -4765.97), 
+          direction = vec3(0, 0, -1), 
+          duration = 40, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180f.ksanim", 
+          start = vec3(1094.58, 25.08, -4765.97), 
+          finish = vec3(1094.58, 25.08, -4765.97), 
+          direction = vec3(0, 0, -1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walkingf.ksanim", 
+          start = vec3(1094.58, 25.08, -4765.97), 
+          finish = vec3(1094.43, 25.1, -4736.8), 
+          direction = vec3(0, 0, 1), 
+          duration = 40, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180f.ksanim", 
+          start = vec3(1094.43, 25.1, -4736.8), 
+          finish = vec3(1094.43, 25.1, -4736.8), 
+          direction = vec3(0, 0, 1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "man1",
+      actions = {
+        { 
+          action = "talking1.ksanim", 
+          start = vec3(1094.56, 25.1, -4714.87), 
+          finish = vec3(1094.56, 25.1, -4714.87), 
+          direction = vec3(1, 0, 0), 
+          duration = 20, 
+          loopTime = 10 
+        },
+        { 
+          action = "talking2.ksanim", 
+          start = vec3(1094.56, 25.1, -4714.87), 
+          finish = vec3(1094.56, 25.1, -4714.87), 
+          direction = vec3(1, 0, 0), 
+          duration = 10, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl1",
+      actions = {
+        { 
+          action = "talking1f.ksanim", 
+          start = vec3(1095, 25.1, -4713.6), 
+          finish = vec3(1095, 25.1, -4713.6), 
+          direction = vec3(0, 0, -1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man10",
+      actions = {
+        { 
+          action = "phone.ksanim", 
+          start = vec3(1094.64, 25.1, -4716.16), 
+          finish = vec3(1094.64, 25.1, -4716.16), 
+          direction = vec3(0.5, 0, 1), 
+          duration = 40, 
+          loopTime = 40 
+        },
+      }
+    },
+    {
+      target = "man3",
+      actions = {
+        { 
+          action = "walking.ksanim", 
+          start = vec3(1094.68, 25.1, -4671.02), 
+          finish = vec3(1094.9, 25.1, -4654.4), 
+          direction = vec3(0, 0, 1), 
+          duration = 20, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(1094.9, 25.1, -4654.4), 
+          finish = vec3(1094.9, 25.1, -4654.4), 
+          direction = vec3(0, 0, 1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(1094.9, 25.1, -4654.4), 
+          finish = vec3(1094.68, 25.1, -4671.02), 
+          direction = vec3(0, 0, -1), 
+          duration = 20, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(1094.68, 25.1, -4671.02), 
+          finish = vec3(1094.68, 25.1, -4671.02), 
+          direction = vec3(0, 0, -1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+      }
+    },
+  },
+  oiw = {
+    {
+      target = "man1",
+      actions = {
+        { 
+          action = "walking.ksanim", 
+          start = vec3(966.84, 6.39, -119.48), 
+          finish = vec3(966.45, 6.56, -164.01), 
+          direction = vec3(0, 0, -1), 
+          duration = 50, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(966.45, 6.56, -164.01), 
+          finish = vec3(966.45, 6.56, -164.01), 
+          direction = vec3(0, 0, -1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(966.45, 6.56, -164.01), 
+          finish = vec3(966.84, 6.39, -119.48), 
+          direction = vec3(0, 0, 1), 
+          duration = 50, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(966.84, 6.39, -119.48), 
+          finish = vec3(966.84, 6.39, -119.48), 
+          direction = vec3(0, 0, 1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "girl1",
+      actions = {
+        { 
+          action = "drinkf.ksanim", 
+          start = vec3(966.03, 6.37, -114.29), 
+          finish = vec3(966.03, 6.37, -114.29), 
+          direction = vec3(-1, 0, 0), 
+          duration = 20, 
+          loopTime = 20 
+        },
+      }
+    },
+    {
+      target = "man5",
+      actions = {
+        { 
+          action = "talking2.ksanim", 
+          start = vec3(965.28, 6.37, -113.23), 
+          finish = vec3(965.28, 6.37, -113.23), 
+          direction = vec3(0, 0, -1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man9",
+      actions = {
+        { 
+          action = "talking1.ksanim", 
+          start = vec3(964.31, 6.37, -113.93), 
+          finish = vec3(964.31, 6.37, -113.93), 
+          direction = vec3(1, 0, 0), 
+          duration = 8, 
+          loopTime = 8 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(964.31, 6.37, -113.93), 
+          finish = vec3(963.26, 6.36, -111.48), 
+          direction = vec3(-0.5, 0, 1), 
+          duration = 3, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(963.26, 6.36, -111.48), 
+          finish = vec3(963.32, 6.31, -98.81), 
+          direction = vec3(0, 0, 1), 
+          duration = 15, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(963.32, 6.31, -98.81), 
+          finish = vec3(964.97, 6.31, -98.46), 
+          direction = vec3(1, 0, 0), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(964.97, 6.31, -98.46), 
+          finish = vec3(965.02, 6.32, -99.95), 
+          direction = vec3(0, 0, -1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "standing.ksanim", 
+          start = vec3(965.02, 6.32, -99.95), 
+          finish = vec3(965.02, 6.32, -99.95), 
+          direction = vec3(0, 0, -1), 
+          duration = 10, 
+          loopTime = 10 
+        },
+                { 
+          action = "walking.ksanim", 
+          start = vec3(965.02, 6.32, -99.95), 
+          finish = vec3(964.97, 6.31, -98.46), 
+          direction = vec3(0, 0, 1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(964.97, 6.31, -98.46), 
+          finish = vec3(963.32, 6.31, -98.81), 
+          direction = vec3(-1, 0, 0), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(963.32, 6.31, -98.81), 
+          finish = vec3(963.26, 6.36, -111.48), 
+          direction = vec3(0, 0, -1), 
+          duration = 15, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(963.26, 6.36, -111.48), 
+          finish = vec3(964.31, 6.37, -113.93), 
+          direction = vec3(0.5, 0, -1), 
+          duration = 3, 
+          loopTime = 2 
+        }, 
+      }
+    },
+    {
+      target = "girl3",
+      actions = {
+        { 
+          action = "phonef.ksanim", 
+          start = vec3(965.61, 6.28, -90.52), 
+          finish = vec3(965.61, 6.28, -90.52), 
+          direction = vec3(0, 0, 1), 
+          duration = 20, 
+          loopTime = 20 
+        },
+      }
+    },
+    {
+      target = "girl4",
+      actions = {
+        { 
+          action = "phonef.ksanim", 
+          start = vec3(966.21, 6.27, -88.4), 
+          finish = vec3(966.21, 6.27, -88.4), 
+          direction = vec3(-1, 0, 0), 
+          duration = 16, 
+          loopTime = 16 
+        },
+      }
+    },
+    {
+      target = "girl2",
+      actions = {
+        { 
+          action = "talking1f.ksanim", 
+          start = vec3(965.95, 6.26, -86.7), 
+          finish = vec3(965.95, 6.26, -86.7), 
+          direction = vec3(0, 0, -1), 
+          duration = 16, 
+          loopTime = 8 
+        },
+      }
+    },
+  },
+  heiwajimas = {
+    {
+      target = "man7",
+      actions = {
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-130.09, 6.32, 1487.65), 
+          finish = vec3(-133.3, 6.31, 1481.13), 
+          direction = vec3(-0.5, 0, -1), 
+          duration = 10, 
+          loopTime = 2 
+        },
+        { 
+          action = "drink.ksanim", 
+          start = vec3(-133.3, 6.31, 1481.13), 
+          finish = vec3(-133.3, 6.31, 1481.13), 
+          direction = vec3(-0.5, 0, -1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-133.3, 6.31, 1481.13), 
+          finish = vec3(-130.09, 6.32, 1487.65), 
+          direction = vec3(0.5, 0, 1), 
+          duration = 10, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "man2",
+      actions = {
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-141, 6.27, 1454.84), 
+          finish = vec3(-129.22, 6.31, 1480.14), 
+          direction = vec3(0.5, 0, 1), 
+          duration = 20, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(-129.22, 6.31, 1480.14), 
+          finish = vec3(-129.22, 6.31, 1480.14), 
+          direction = vec3(0.5, 0, 1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-129.22, 6.31, 1480.14), 
+          finish = vec3(-141, 6.27, 1454.84), 
+          direction = vec3(-0.5, 0, -1), 
+          duration = 20, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(-141, 6.27, 1454.84), 
+          finish = vec3(-141, 6.27, 1454.84), 
+          direction = vec3(-0.5, 0, -1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "girl4",
+      actions = {
+        { 
+          action = "phone2f.ksanim", 
+          start = vec3(-149.4, 6.08, 1437.61), 
+          finish = vec3(-149.4, 6.08, 1437.61), 
+          direction = vec3(0.5, 0, 1), 
+          duration = 50, 
+          loopTime = 50 
+        },
+      }
+    },
+    {
+      target = "man4",
+      actions = {
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-110.04, 6.39, 1541.6), 
+          finish = vec3(-120.34, 6.37, 1517.45), 
+          direction = vec3(-0.5, 0, -1), 
+          duration = 30, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-120.34, 6.37, 1517.45), 
+          finish = vec3(-116.24, 6.37, 1515.19), 
+          direction = vec3(1, 0, -0.5), 
+          duration = 6, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "man1",
+      actions = {
+        { 
+          action = "talking1.ksanim", 
+          start = vec3(-122.56, 6.36, 1512.26), 
+          finish = vec3(-122.56, 6.36, 1512.26), 
+          direction = vec3(0, 0, 1), 
+          duration = 16, 
+          loopTime = 8 
+        },
+      }
+    },
+    {
+      target = "man8",
+      actions = {
+        { 
+          action = "talking2.ksanim", 
+          start = vec3(-121.88, 6.36, 1512.9), 
+          finish = vec3(-121.88, 6.36, 1512.9), 
+          direction = vec3(-1, 0, 0.5), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man9",
+      actions = {
+        { 
+          action = "standing.ksanim", 
+          start = vec3(-121.8, 6.36, 1513.91), 
+          finish = vec3(-121.8, 6.36, 1513.91), 
+          direction = vec3(-1, 0, -1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl1",
+      actions = {
+        { 
+          action = "phonef.ksanim", 
+          start = vec3(-134.94, 6.31, 1482.41), 
+          finish = vec3(-134.94, 6.31, 1482.41), 
+          direction = vec3(-1, 0, -1), 
+          duration = 15, 
+          loopTime = 15 
+        },
+      }
+    },
+  },
+  heiwajiman ={
+    {
+      target = "girl2",
+      actions = {
+        { 
+          action = "sittingf.ksanim", 
+          start = vec3(-232.85, 12.07, 1347.68), 
+          finish = vec3(-232.85, 12.07, 1347.68), 
+          direction = vec3(1, 0, 1), 
+          duration = 15, 
+          loopTime = 15 
+        },
+      }
+    },
+    {
+      target = "man4",
+      actions = {
+        { 
+          action = "sitting.ksanim", 
+          start = vec3(-230.88, 12.07, 1349.85), 
+          finish = vec3(-230.88, 12.07, 1349.85), 
+          direction = vec3(1, 0, 1), 
+          duration = 15, 
+          loopTime = 15 
+        },
+      }
+    },
+    {
+      target = "man1",
+      actions = {
+        { 
+          action = "sitting.ksanim", 
+          start = vec3(-231.24, 12.17, 1385.06), 
+          finish = vec3(-231.24, 12.17, 1385.06), 
+          direction = vec3(0.5, 0, -1), 
+          duration = 15, 
+          loopTime = 15 
+        },
+      }
+    },
+    {
+      target = "man2",
+      actions = {
+        { 
+          action = "phone.ksanim", 
+          start = vec3(-229.94, 12.07, 1385.25), 
+          finish = vec3(-229.94, 12.07, 1385.25), 
+          direction = vec3(0, 0, -1), 
+          duration = 20, 
+          loopTime = 20 
+        },
+      }
+    },
+    {
+      target = "man3",
+      actions = {
+        { 
+          action = "standing.ksanim", 
+          start = vec3(-231.72, 12.07, 1383.75), 
+          finish = vec3(-231.72, 12.07, 1383.75), 
+          direction = vec3(1, 0, 1), 
+          duration = 20, 
+          loopTime = 20 
+        },
+      }
+    },
+    {
+      target = "girl3",
+      actions = {
+        { 
+          action = "walkingf.ksanim", 
+          start = vec3(-204.83, 12.07, 1370.46), 
+          finish = vec3(-205.11, 12.07, 1366.07), 
+          direction = vec3(-0.1, 0, -1), 
+          duration = 6, 
+          loopTime = 2 
+        },
+        { 
+          action = "walkingf.ksanim", 
+          start = vec3(-205.11, 12.07, 1366.07), 
+          finish = vec3(-199.24, 12.07, 1361.53), 
+          direction = vec3(1, 0, -0.8), 
+          duration = 10, 
+          loopTime = 2 
+        },
+        { 
+          action = "thinkingf.ksanim", 
+          start = vec3(-199.24, 12.07, 1361.53), 
+          finish = vec3(-199.24, 12.07, 1361.53), 
+          direction = vec3(1, 0, -0.8), 
+          duration = 10, 
+          loopTime = 10 
+        },
+        { 
+          action = "turn180f.ksanim", 
+          start = vec3(-199.24, 12.07, 1361.53), 
+          finish = vec3(-199.24, 12.07, 1361.53), 
+          direction = vec3(1, 0, -0.8), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "drinkf.ksanim", 
+          start = vec3(-199.24, 12.07, 1361.53), 
+          finish = vec3(-199.24, 12.07, 1361.53), 
+          direction = vec3(-1, 0, 0.8), 
+          duration = 10, 
+          loopTime = 10 
+        },
+        { 
+          action = "walkingf.ksanim", 
+          start = vec3(-199.24, 12.07, 1361.53), 
+          finish = vec3(-205.11, 12.07, 1366.07), 
+          direction = vec3(-1, 0, 0.8), 
+          duration = 10, 
+          loopTime = 2 
+        },
+        { 
+          action = "walkingf.ksanim", 
+          start = vec3(-205.11, 12.07, 1366.07), 
+          finish = vec3(-204.83, 12.07, 1370.46), 
+          direction = vec3(0.1, 0, 1), 
+          duration = 6, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "man6",
+      actions = {
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-225.37, 12.07, 1359.66), 
+          finish = vec3(-241.83, 12.07, 1339), 
+          direction = vec3(-0.7, 0, -1), 
+          duration = 30, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(-241.83, 12.07, 1339), 
+          finish = vec3(-241.83, 12.07, 1339), 
+          direction = vec3(-0.7, 0, -1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-241.83, 12.07, 1339), 
+          finish = vec3(-225.37, 12.07, 1359.66), 
+          direction = vec3(0.7, 0, 1), 
+          duration = 30, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(-225.37, 12.07, 1359.66), 
+          finish = vec3(-225.37, 12.07, 1359.66), 
+          direction = vec3(0.7, 0, 1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "girl4",
+      actions = {
+        { 
+          action = "talking2f.ksanim", 
+          start = vec3(-215.9, 12.07, 1374.84), 
+          finish = vec3(-215.9, 12.07, 1374.84), 
+          direction = vec3(-1, 0, -0.5), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man10",
+      actions = {
+        { 
+          action = "talking2.ksanim", 
+          start = vec3(-216.87, 12.07, 1375.55), 
+          finish = vec3(-216.87, 12.07, 1375.55), 
+          direction = vec3(0, 0, -1), 
+          duration = 16, 
+          loopTime = 8 
+        },
+      }
+    },
+  },
+  daishi = {
+    {
+      target = "girl4",
+      actions = {
+        { 
+          action = "sittingf.ksanim", 
+          start = vec3(-306.73, 15.34, 6140.44), 
+          finish = vec3(-306.73, 15.34, 6140.44), 
+          direction = vec3(-1, 0, 0), 
+          duration = 20, 
+          loopTime = 20 
+        },
+      }
+    },
+    {
+      target = "girl2",
+      actions = {
+        { 
+          action = "phonef.ksanim", 
+          start = vec3(-309.22, 15.19, 6140.04), 
+          finish = vec3(-309.22, 15.19, 6140.04), 
+          direction = vec3(0, 0, 1), 
+          duration = 20, 
+          loopTime = 20 
+        },
+        { 
+          action = "phone2f.ksanim", 
+          start = vec3(-309.22, 15.19, 6140.04), 
+          finish = vec3(-309.22, 15.19, 6140.04), 
+          direction = vec3(1, 0, -0.1), 
+          duration = 40, 
+          loopTime = 40 
+        },
+      }
+    },
+    {
+      target = "man6",
+      actions = {
+        { 
+          action = "standing.ksanim", 
+          start = vec3(-305.24, 15.19, 6143.79), 
+          finish = vec3(-305.24, 15.19, 6143.79), 
+          direction = vec3(1, 0, 0), 
+          duration = 6, 
+          loopTime = 6 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-305.24, 15.19, 6143.79), 
+          finish = vec3(-305.14, 15.19, 6146.73), 
+          direction = vec3(0, 0, 1), 
+          duration = 4, 
+          loopTime = 2 
+        },
+        { 
+          action = "standing.ksanim", 
+          start = vec3(-305.14, 15.19, 6146.73), 
+          finish = vec3(-305.14, 15.19, 6146.73), 
+          direction = vec3(1, 0, 0), 
+          duration = 6, 
+          loopTime = 6 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-305.14, 15.19, 6146.73), 
+          finish = vec3(-305.24, 15.19, 6143.79), 
+          direction = vec3(0, 0, -1), 
+          duration = 4, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "man8",
+      actions = {
+        { 
+          action = "sitting.ksanim", 
+          start = vec3(-303.84, 15.30, 6152.8), 
+          finish = vec3(-303.84, 15.30, 6152.8), 
+          direction = vec3(-1, 0, 0), 
+          duration = 32, 
+          loopTime = 32 
+        },
+      }
+    },
+    {
+      target = "man5",
+      actions = {
+        { 
+          action = "sitting.ksanim", 
+          start = vec3(-303.84, 15.30, 6153.8), 
+          finish = vec3(-303.84, 15.30, 6153.8), 
+          direction = vec3(-1, 0, 0), 
+          duration = 14, 
+          loopTime = 14 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-304.49, 15.19, 6153.88), 
+          finish = vec3(-304.54, 15.19, 6160.8), 
+          direction = vec3(0, 0, 1), 
+          duration = 10, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-304.54, 15.19, 6160.8), 
+          finish = vec3(-295.53, 15.24, 6160.94), 
+          direction = vec3(1, 0, 0), 
+          duration = 10, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-295.53, 15.24, 6160.94), 
+          finish = vec3(-304.54, 15.19, 6160.8), 
+          direction = vec3(-1, 0, 0), 
+          duration = 10, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-304.54, 15.19, 6160.8), 
+          finish = vec3(-304.49, 15.19, 6153.88), 
+          direction = vec3(0, 0, -1), 
+          duration = 10, 
+          loopTime = 2 
+        },
+      }
+    },
+  },
+  yoyogi = {
+    {
+      target = "girl1",
+      actions = {
+        { 
+          action = "talking1f.ksanim", 
+          start = vec3(-4345.15, 36.52, -8882.33), 
+          finish = vec3(-4345.15, 36.52, -8882.33), 
+          direction = vec3(0, 0, 1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl3",
+      actions = {
+        { 
+          action = "talking2f.ksanim", 
+          start = vec3(-4343.67, 36.52, -8881.77), 
+          finish = vec3(-4343.67, 36.52, -8881.77), 
+          direction = vec3(-1, 0, 0), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man4",
+      actions = {
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-4340.03, 36.52, -8881.67), 
+          finish = vec3(-4328.54, 36.52, -8885.41), 
+          direction = vec3(1, 0, -0.3), 
+          duration = 16, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(-4328.54, 36.52, -8885.41), 
+          finish = vec3(-4328.54, 36.52, -8885.41), 
+          direction = vec3(1, 0, -0.3), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(-4328.54, 36.52, -8885.41), 
+          finish = vec3(-4340.03, 36.52, -8881.67), 
+          direction = vec3(-1, 0, 0.3), 
+          duration = 16, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(-4340.03, 36.52, -8881.67), 
+          finish = vec3(-4340.03, 36.52, -8881.67), 
+          direction = vec3(-1, 0, 0.3), 
+          duration = 2, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "man5",
+      actions = {
+        { 
+          action = "talking1.ksanim", 
+          start = vec3(-4323.45, 36.52, -8887.31), 
+          finish = vec3(-4323.45, 36.52, -8887.31), 
+          direction = vec3(1, 0, 0.3), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl2",
+      actions = {
+        { 
+          action = "thinkingf.ksanim", 
+          start = vec3(-4322.1, 36.52, -8887.63), 
+          finish = vec3(-4322.1, 36.52, -8887.63), 
+          direction = vec3(-1, 0, 0.3), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl4",
+      actions = {
+        { 
+          action = "talking1f.ksanim", 
+          start = vec3(-4307.51, 36.47, -8887.11), 
+          finish = vec3(-4307.51, 36.47, -8887.11), 
+          direction = vec3(1, 0, 0.3), 
+          duration = 16, 
+          loopTime = 8 
+        },
+      }
+    },
+    {
+      target = "man6",
+      actions = {
+        { 
+          action = "drink.ksanim", 
+          start = vec3(-4306.65, 36.42, -8888.05), 
+          finish = vec3(-4306.65, 36.42, -8888.05), 
+          direction = vec3(0, 0, 1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+  },
+  oie = {
+    {
+      target = "man1",
+      actions = {
+        { 
+          action = "walking.ksanim", 
+          start = vec3(941.88, -2.24, -1143.44), 
+          finish = vec3(947.61, -2.27, -1163.69), 
+          direction = vec3(0.3, 0, -1), 
+          duration = 28, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(947.61, -2.27, -1163.69), 
+          finish = vec3(947.61, -2.27, -1163.69), 
+          direction = vec3(0.3, 0, -1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+        { 
+          action = "walking.ksanim", 
+          start = vec3(947.61, -2.27, -1163.69), 
+          finish = vec3(941.88, -2.24, -1143.44), 
+          direction = vec3(-0.3, 0, 1), 
+          duration = 28, 
+          loopTime = 2 
+        },
+        { 
+          action = "turn180.ksanim", 
+          start = vec3(941.88, -2.24, -1143.44), 
+          finish = vec3(941.88, -2.24, -1143.44), 
+          direction = vec3(-0.3, 0, 1), 
+          duration = 2, 
+          loopTime = 2 
+        },
+      }
+    },
+    {
+      target = "man2",
+      actions = {
+        { 
+          action = "standing.ksanim", 
+          start = vec3(947.1, -2.28, -1170.58), 
+          finish = vec3(947.1, -2.28, -1170.58), 
+          direction = vec3(1, 0, 0.5), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl2",
+      actions = {
+        { 
+          action = "talking2f.ksanim", 
+          start = vec3(945.22, -2.28, -1171.29), 
+          finish = vec3(945.22, -2.28, -1171.29), 
+          direction = vec3(-1, 0, 1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl4",
+      actions = {
+        { 
+          action = "talking1f.ksanim", 
+          start = vec3(944.81, -2.38, -1169.95), 
+          finish = vec3(944.81, -2.38, -1169.95), 
+          direction = vec3(1, 0, -1), 
+          duration = 20, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man4",
+      actions = {
+        { 
+          action = "phone2.ksanim", 
+          start = vec3(938.43, -2.21, -1131.4), 
+          finish = vec3(938.43, -2.21, -1131.4), 
+          direction = vec3(0.3, 0, -1), 
+          duration = 40, 
+          loopTime = 40 
+        },
+      }
+    },
+  },
+  hakozaki = {
+    {
+      target = "man7",
+      actions = {
+        { 
+          action = "talking1.ksanim", 
+          start = vec3(3977.6, 10.05, -8983.78), 
+          finish = vec3(3977.6, 10.05, -8983.78), 
+          direction = vec3(-0.5, 0, -1), 
+          duration = 7, 
+          loopTime = 7 
+        },
+      }
+    },
+    {
+      target = "man8",
+      actions = {
+        { 
+          action = "talking2.ksanim", 
+          start = vec3(3975.78, 10.08, -8983.67), 
+          finish = vec3(3975.78, 10.08, -8983.67), 
+          direction = vec3(1, 0, -1), 
+          duration = 10, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "man9",
+      actions = {
+        { 
+          action = "phone.ksanim", 
+          start = vec3(3977.9, 10.05, -8985.57), 
+          finish = vec3(3977.9, 10.05, -8985.57), 
+          direction = vec3(-1, 0, 1), 
+          duration = 30, 
+          loopTime = 30 
+        },
+      }
+    },
+    {
+      target = "man5",
+      actions = {
+        { 
+          action = "talking2.ksanim", 
+          start = vec3(3966.25, 10, -9004.71), 
+          finish = vec3(3966.25, 10, -9004.71), 
+          direction = vec3(1, 0, -1), 
+          duration = 10, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl2",
+      actions = {
+        { 
+          action = "talking1f.ksanim", 
+          start = vec3(3967.66, 9.98, -9006.16), 
+          finish = vec3(3967.66, 9.98, -9006.16), 
+          direction = vec3(-1, 0, 1), 
+          duration = 8, 
+          loopTime = 8 
+        },
+      }
+    },
+    {
+      target = "man3",
+      actions = {
+        { 
+          action = "standing.ksanim", 
+          start = vec3(3990.54, 9.86, -8997.61), 
+          finish = vec3(3990.54, 9.86, -8997.61), 
+          direction = vec3(0.5, 0, 1), 
+          duration = 10, 
+          loopTime = 10 
+        },
+      }
+    },
+    {
+      target = "girl4",
+      actions = {
+        { 
+          action = "drink.ksanim", 
+          start = vec3(3971.65, 9.92, -9009.98), 
+          finish = vec3(3971.65, 9.92, -9009.98), 
+          direction = vec3(0.5, 0, 1), 
+          duration = 10, 
+          loopTime = 10 
+        },
+      }
+    },
+  }
+}
