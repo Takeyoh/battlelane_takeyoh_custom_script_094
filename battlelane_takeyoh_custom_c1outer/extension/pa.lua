@@ -103,20 +103,6 @@ local area = {
             {pos=vec3(964.6, 6.05, -70.61),dir=vec3(0,0,-1),length = 20,flag=0},
         }
     },
-    ['oie']={
-        start = {
-            vec3(923.5,-1.33759,-823.79),
-            vec3(936.04, -2.33, -1139.78),
-        },
-        position = vec3(940.19, -2.23, -1138.32),
-        distance = 350,
-        park = {
-            {pos=vec3(937.53, -2.34, -1144.9),dir=vec3(1,0,0.3),length = 5,flag=0},
-            {pos=vec3(939.36, -2.36, -1152.17),dir=vec3(1,0,0.3),length = 5,flag=0},
-            {pos=vec3(941.41, -2.37, -1159.51),dir=vec3(1,0,0.3),length = 5,flag=0},
-            {pos=vec3(924.03, -2.31, -1134.7),dir=vec3(-0.3,0,1),length = 20,flag=0},
-        }
-    },
     ['heiwajiman']={
         start = {
             vec3(-249.212,5.89392,1373.47),
@@ -169,6 +155,7 @@ local area = {
     ['yoyogi']={
         start = {
             vec3(-4579.81,41.4185,-8733.54),
+            vec3(-4564.49, 34.57, -8744.7),
             vec3(-4341.4, 36.28, -8877.34),
         },
         position = vec3(-4376.71,36.28,-8820.51),
@@ -181,23 +168,6 @@ local area = {
             {pos=vec3(-4310.36, 36.31, -8882.8),dir=vec3(-0.3,0,-1),length = 5,flag=0},
             {pos=vec3(-4292.72, 36.33, -8884.01),dir=vec3(-0.75,0,-1),length = 20,flag=0},
             {pos=vec3(-4296.36, 36.33, -8884.29),dir=vec3(-0.75,0,-1),length = 20,flag=0},
-        }
-    },
-    ['hakozaki']={
-        start = {
-            vec3(3691,19.39,-8907.17),
-            vec3(3836.46,11.3327,-8725.32),
-            vec3(3975.76, 9.36, -8989.54),
-        },
-        position = vec3(3975.76, 9.36, -8989.54),
-        distance = 350,
-        park = {
-            {pos=vec3(3983.85, 9.94, -8997.12),dir=vec3(0.9,0,1),length = 5,flag=0},
-            {pos=vec3(3988.27, 9.87, -9001.27),dir=vec3(0.9,0,1),length = 5,flag=0},
-            {pos=vec3(3975.94, 9.91, -9006.65),dir=vec3(-0.9,0,-1),length = 5,flag=0},
-            {pos=vec3(3971.39, 9.98, -9002.12),dir=vec3(-0.9,0,-1),length = 5,flag=0},
-            {pos=vec3(3966.48, 9.97, -9010.28),dir=vec3(0.9,0,-1),length = 20,flag=0},
-            {pos=vec3(3961.36, 9.99, -9010.49),dir=vec3(0.9,0,-1),length = 20,flag=0},
         }
     },
     ['daikoku']={
@@ -221,8 +191,39 @@ local area = {
             {pos=vec3(-5870.58, 3.08, 14038.11),dir=vec3(-1,0,0.3),length = 20,flag=0},
         }
     },
-
+    ['oie']={
+        start = {
+            vec3(923.5,-1.33759,-823.79),
+            vec3(936.04, -2.33, -1139.78),
+        },
+        position = vec3(940.19, -2.23, -1138.32),
+        distance = 350,
+        park = {
+            {pos=vec3(937.53, -2.34, -1144.9),dir=vec3(1,0,0.3),length = 5,flag=0},
+            {pos=vec3(939.36, -2.36, -1152.17),dir=vec3(1,0,0.3),length = 5,flag=0},
+            {pos=vec3(941.41, -2.37, -1159.51),dir=vec3(1,0,0.3),length = 5,flag=0},
+            {pos=vec3(924.03, -2.31, -1134.7),dir=vec3(-0.3,0,1),length = 20,flag=0},
+        }
+    },
+    ['hakozaki']={
+        start = {
+            vec3(3691,19.39,-8907.17),
+            vec3(3836.46,11.3327,-8725.32),
+            vec3(3975.76, 9.36, -8989.54),
+        },
+        position = vec3(3975.76, 9.36, -8989.54),
+        distance = 350,
+        park = {
+            {pos=vec3(3983.85, 9.94, -8997.12),dir=vec3(0.9,0,1),length = 5,flag=0},
+            {pos=vec3(3988.27, 9.87, -9001.27),dir=vec3(0.9,0,1),length = 5,flag=0},
+            {pos=vec3(3975.94, 9.91, -9006.65),dir=vec3(-0.9,0,-1),length = 5,flag=0},
+            {pos=vec3(3971.39, 9.98, -9002.12),dir=vec3(-0.9,0,-1),length = 5,flag=0},
+            {pos=vec3(3966.48, 9.97, -9010.28),dir=vec3(0.9,0,-1),length = 20,flag=0},
+            {pos=vec3(3961.36, 9.99, -9010.49),dir=vec3(0.9,0,-1),length = 20,flag=0},
+        }
+    },
 }
+
 sharePA.name = ""
 local setting = 0
 local shuffle = {}

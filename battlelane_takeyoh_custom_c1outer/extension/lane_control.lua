@@ -323,8 +323,6 @@ ac.onCarJumped(-1, function(carIndex)
         -- 設定されたlaneパラメータに合わせて、車両パラメータを再設定
         setParameter(carIndex,true)
 
-        -- 走行レーンからのオフセットを設定        
-        physics.setAISplineAbsoluteOffset(carIndex, cars[carIndex].offset, true)
     end
 end)
 
@@ -385,12 +383,12 @@ function laneControl(carsStatus,start,dt)
         local distance = carsDistance[0]['car'..i]
         if not carsStatus[0].isParking then
             if (i ~= 0 and not ac.getCar(i).isInPitlane) then
-                if distance > 300 and distance < 600 then
+                if distance > 400 and distance < 800 then
                     if existArroundCar(i,sharedTrackParam.trafficCarDistance) then
                         despawn(i)
                     end
                 end
-                if distance > -100 and distance < 200 and carsStatus[i].speed < 5 then
+                if distance > 0 and distance < 300 and carsStatus[i].speed < 5 then
                     despawn(i)
                 end
             end
@@ -448,7 +446,7 @@ function laneControl(carsStatus,start,dt)
             physics.setAISplineAbsoluteOffset(i, carsStatus[0].fromLine, true)
 
         -- AI車両の制御（負荷軽減のため一定距離以内の車両のみを制御）
-        elseif ac.getCar(i).position:distance(ac.getCar(0).position) < 500 
+        elseif ac.getCar(i).position:distance(ac.getCar(0).position) < 5000 
           or carsStatus[i].mass > sharedTrackParam.largeCarMass then 
             -- ハザードが点いている車は消す。
             if blinker[i+1] == 3 then

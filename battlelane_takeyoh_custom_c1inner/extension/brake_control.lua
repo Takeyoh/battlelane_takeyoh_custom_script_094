@@ -65,7 +65,7 @@ function brakeControl(carsStatus,start,dt)
         if not carsStatus[i].isParking and not ac.getCar(i).isInPitlane then
             --自車に近い車両のみ制御対象にする
 --            if carsDistance[0]['car'..i] > -100 and carsDistance[0]['car'..i] < 250 then
-            if ac.getCar(i).position:distance(ac.getCar(0).position) < 300 then
+            if ac.getCar(i).position:distance(ac.getCar(0).position) < 1000 then
                 local selfCar = carsStatus[i]
                 local brake = false
 
@@ -154,10 +154,14 @@ function brakeControl(carsStatus,start,dt)
 
                 else
                     --アクセルを制限
-                    physics.setAIThrottleLimit(i,0.01)
+                    if selfCar.setSpeed > 90 then
+                        physics.setAIThrottleLimit(i,0.01)
+                    else
+                        physics.setAIThrottleLimit(i,1)
+                    end
                     --トラフィック用車両の最高速度を強制的に制限
-                    if brake == false and selfCar.speed > 50 then
-                        physics.addForce(i,vec3(0,0,0),true,vec3(0,0,8000*( selfCar.setSpeed - selfCar.speed)),true)
+                    if brake == false and selfCar.speed > 5 then
+                        physics.addForce(i,vec3(0,0,0),true,vec3(0,0,2*carsStatus[i].mass*( selfCar.setSpeed - selfCar.speed)),true)
                     end
 
                     -- 前方に車が割り込んだら減速して車間を保つ
@@ -185,4 +189,12 @@ function calcDots()
         if dot < minDot then minDot = dot end
     end
     return minDot
+end
+
+if ac.getPatchVersionCode() >= 3465 then
+    ac.onCarCollision(-1, function(carIndex)
+        if carsStatus[carIndex].lane ~= "challenger" then
+            physics.setAIStopCounter(carIndex, 1)
+        end
+    end)
 end
