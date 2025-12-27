@@ -90,7 +90,7 @@ function brakeControl(carsStatus,start,dt)
 
                 -- 前方車両の距離に応じてブレーキ処理（走行方向と逆向きに力を加える）
                 if frontCar ~= i then
-                    if minDistance < 2 then
+                    if minDistance < 2 and selfCar.speed > 10 then
                         physics.addForce(i,vec3(0,0,0),true,vec3(0,0,-300000*math.max(0,2-minDistance)),true)                
                     elseif carsStatus[frontCar].speed - selfCar.speed < 0 then
                         local brakeThreshold
@@ -160,7 +160,7 @@ function brakeControl(carsStatus,start,dt)
                         physics.setAIThrottleLimit(i,1)
                     end
                     --トラフィック用車両の最高速度を強制的に制限
-                    if brake == false and selfCar.speed > 5 then
+                    if brake == false and selfCar.speed > 5 and carsDistance[0]['car'..i] > 0 and carsDistance[0]['car'..i] < 1000 then
                         physics.addForce(i,vec3(0,0,0),true,vec3(0,0,2*carsStatus[i].mass*( selfCar.setSpeed - selfCar.speed)),true)
                     end
 
