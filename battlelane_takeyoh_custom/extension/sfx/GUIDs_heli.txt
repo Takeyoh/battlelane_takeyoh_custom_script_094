@@ -1,0 +1,2 @@
+{2ec1a04e-5348-479a-a64f-56812fadba17} event:/heli/rotor
+{090ac7fd-5dbc-4bf1-82ec-7b51604bf769} bank:/heli

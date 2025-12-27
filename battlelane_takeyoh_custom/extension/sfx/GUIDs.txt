@@ -1,0 +1,4 @@
+{58f2378d-12a5-4303-a765-270ed5e09f1f} event:/Tracks/SRP/JR E231 Loop 22khz
+{e25be154-b020-4278-9d9a-0968022f3935} event:/Tracks/SRP/Tokyo Monorail Loop 22khz
+{63cb85ac-dfa4-4e97-9188-3567f82e907b} event:/Tracks/SRP/Yurikamome 7000 Loop 22khz
+{6904e1c5-ed6b-41d2-a268-4182689942e9} bank:/SRP

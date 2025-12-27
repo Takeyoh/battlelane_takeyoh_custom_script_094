@@ -1,0 +1,2 @@
+{be7b6bb0-11e4-4168-beb1-dbbb45ec1eca} event:/airplane/jet
+{32047fee-5975-4726-aec9-cee868b6ae84} bank:/airplane
