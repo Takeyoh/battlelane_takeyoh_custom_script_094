@@ -383,7 +383,7 @@ function laneControl(carsStatus,start,dt)
         local distance = carsDistance[0]['car'..i]
         if not carsStatus[0].isParking then
             if (i ~= 0 and not ac.getCar(i).isInPitlane) then
-                if distance > 400 and distance < 800 then
+                if distance > 500 and distance < 1000 then
                     if existArroundCar(i,sharedTrackParam.trafficCarDistance) then
                         despawn(i)
                     end
