@@ -10,7 +10,7 @@ local point = {
    { position = vec3(-308.23, 15.05, 6150.91), direction = vec3(1,0,0)},  -- daishi PA
    { position = vec3(-246.68, 11.88, 1355.33), direction = vec3(-1,0,0.8)},  -- heiwajima north PA
    { position = vec3(-4341.4, 36.28, -8877.34), direction = vec3(-0.3,0,-1)},  -- yoyogi PA
---   { position = vec3(-5934.4, 2.6, 14098.79), direction = vec3(1,0,-0.5)},  -- daikoku PA
+   { position = vec3(-5934.4, 2.6, 14098.79), direction = vec3(1,0,-0.5)},  -- daikoku PA
 }
 local point2 = {
    { position = vec3(3407.15, 30.4, -3393.47), direction = vec3(1,0,1)},  -- ariake JCT
