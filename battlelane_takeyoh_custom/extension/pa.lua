@@ -1,9 +1,6 @@
 print("set car for PA")
 
 local totalCars = ac.getSim().carsCount
-if totalCars == 1 then
-    return nil
-end
 
 local carsStatus = {}
 local carsDistance = {}
@@ -294,7 +291,7 @@ function carSetting()
         for j = 1, totalCars - 1 do
             local carIndex = shuffle[j]
             if carsStatus[carIndex].battle == 0 
-            and (carsDistance[0]['car'..carIndex] > 200 
+            and (carsDistance[0]['car'..carIndex] > 500 
             or carsDistance[0]['car'..carIndex] < -100) then
                 for i = 1, #area[sharePA.name].park do
                     if area[sharePA.name].park[i].flag == 0 
