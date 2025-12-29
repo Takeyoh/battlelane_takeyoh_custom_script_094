@@ -1,7 +1,6 @@
 local centerPosition = vec3(-5550.3, 0, 13911.9)
 local daikokuAreaRadius = 1000
 local status = 0
-local status2 = 0
 
 local deleteMeshTable = {
 "0ROAD.001",
@@ -116,17 +115,17 @@ local meshTable={
 "bayshore_chunk2_geo_Ground_Level_lamp101_head",
 "bayshore_chunk2_geo_fence_kanaami.001",
 "bayshore_chunk2_geo_fence_kanaami",
-"bayshore_chunk2_geo_fence_03.001",
 "bayshore_chunk2_geo_fence_03",
+"bayshore_chunk2_geo_fence_03.001",
 "bayshore_chunk2_geo_botom_s_01.001",
 "bayshore_chunk2_geo_botom_s_01",
-"bayshore_chunk2_geo_botom_u_13.001",
 "bayshore_chunk2_geo_botom_u_13",
+"bayshore_chunk2_geo_botom_u_13.001",
 "bayshore_chunk2_geo_wal_01",
 "bayshore_chunk2_geo_wal_04",
 "bayshore_chunk2_geo_wal_dan_04",
-"bayshore_chunk2_geo_road_01_seamless",
 "bayshore_chunk2_geo_road_01",
+"bayshore_chunk2_geo_road_01_seamless",
 "bayshore_chunk2_geo_botom_u_01",
 "geo_botom_s_002"
 }
@@ -158,62 +157,54 @@ checkPoints[1] = vec3(-6070.66,27.2558,13998.6)
 checkPoints[2] = vec3(-6076.6,18.3622,13995.7)
 checkPoints[3] = vec3(-6132.17,28.8429,13767.9)
 checkPoints[4] = vec3(-6135.25,18.9242,13780)
+checkPoints[5] = vec3(-5934.4, 2.6, 14098.79)
 
 print ("daikoku.lua")
-local counter = 0
 local daikokuAreaFlag = false
+local counter = 0
 
-ac.onCarJumped(0, function(carIndex)
-    local sp = ac.getCar(carIndex).position
-    local largeDistance = math.sqrt((sp.x - centerPosition.x)^2 + (sp.z - centerPosition.z)^2)
-    if largeDistance < daikokuAreaRadius and sp.y < 10 then
-        daikokuAreaFlag = true
-    else
-        daikokuAreaFlag = false        
-    end
-end)
-
-function update(dt)
-    ac.debug("mode", daikokuAreaFlag)
-    local sp = ac.getCar().position
-    counter = 0
-    for i,checkpoint in ipairs(checkPoints) do
-        local distance = math.sqrt((sp.x - checkpoint.x)^2 + (sp.y - checkpoint.y)^2 + (sp.z - checkpoint.z)^2)
-        if distance < checkPointRadius then
-            if status2 == 0 then
-                daikokuAreaFlag = not(daikokuAreaFlag)
-                status2 = 1
+function script.update(dt)
+    if counter < (counter + dt) % 0.1 then
+        ac.debug("mode", daikokuAreaFlag)
+        local sp = ac.getCar(0).position
+        local largeDistance = sp:distance(centerPosition)
+        ac.debug("largeDistance",largeDistance)
+        if daikokuAreaFlag == true and largeDistance > daikokuAreaRadius then
+            daikokuAreaFlag = false
+            status = 0
+        elseif daikokuAreaFlag == false and status ==  0 then
+            for i,checkpoint in ipairs(checkPoints) do
+                local distance = sp:distance(checkpoint)
+                if distance < checkPointRadius then
+                    daikokuAreaFlag = true
+                    status = 1
+                end
             end
-            counter = counter + 1
         end
-    end
-    if counter == 0 and status2 == 1 then
-        status2 = 0
-    end
 
-    if daikokuAreaFlag and status == 0 then
-        for i,meshName in ipairs(meshTable) do
-            ac.findMeshes(meshName):setTransparent(true)
-            ac.findMeshes(meshName):setVisible(false)
-            ac.findMeshes(meshName):setShadows(false)
+        if daikokuAreaFlag and ac.findMeshes("bayshore_chunk2_geo_road_01"):isTransparent() == false then
+            for i,meshName in ipairs(meshTable) do
+                ac.findMeshes(meshName):setTransparent(true)
+                ac.findMeshes(meshName):setVisible(false)
+                ac.findMeshes(meshName):setShadows(false)
+            end
+            for i,meshName in ipairs(meshTableOrig) do
+                ac.findMeshes(meshName):setTransparent(false)
+                ac.findMeshes(meshName):setVisible(true)
+                ac.findMeshes(meshName):setShadows(true)
+            end        
+        elseif not(daikokuAreaFlag) and ac.findMeshes("bayshore_chunk2_geo_road_01"):isTransparent() == true then
+            for i,meshName in ipairs(meshTable) do
+                ac.findMeshes(meshName):setTransparent(false)
+                ac.findMeshes(meshName):setVisible(true)
+                ac.findMeshes(meshName):setShadows(true)
+            end
+            for i,meshName in ipairs(meshTableOrig) do
+                ac.findMeshes(meshName):setTransparent(true)
+                ac.findMeshes(meshName):setVisible(false)
+                ac.findMeshes(meshName):setShadows(false)
+            end       
         end
-        for i,meshName in ipairs(meshTableOrig) do
-            ac.findMeshes(meshName):setTransparent(false)
-            ac.findMeshes(meshName):setVisible(true)
-            ac.findMeshes(meshName):setShadows(true)
-        end        
-        status = 1
-    elseif not(daikokuAreaFlag) and status == 1 then
-        for i,meshName in ipairs(meshTable) do
-            ac.findMeshes(meshName):setTransparent(false)
-            ac.findMeshes(meshName):setVisible(true)
-            ac.findMeshes(meshName):setShadows(true)
-        end
-        for i,meshName in ipairs(meshTableOrig) do
-            ac.findMeshes(meshName):setTransparent(true)
-            ac.findMeshes(meshName):setVisible(false)
-            ac.findMeshes(meshName):setShadows(false)
-        end       
-        status = 0
     end
+    counter = (counter + dt) % 0.1
 end
