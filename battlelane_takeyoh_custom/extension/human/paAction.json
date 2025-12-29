@@ -386,32 +386,32 @@
       actions = {
         { 
           action = "walking.ksanim", 
-          start = vec3(966.84, 6.39, -119.48), 
-          finish = vec3(966.45, 6.56, -164.01), 
+          start = vec3(966.75, 6.39, -130.45), 
+          finish = vec3(966.26, 6.54, -175.08), 
           direction = vec3(0, 0, -1), 
-          duration = 50, 
+          duration = 56, 
           loopTime = 2 
         },
         { 
           action = "turn180.ksanim", 
-          start = vec3(966.45, 6.56, -164.01), 
-          finish = vec3(966.45, 6.56, -164.01), 
+          start = vec3(966.26, 6.54, -175.08), 
+          finish = vec3(966.26, 6.54, -175.08), 
           direction = vec3(0, 0, -1), 
           duration = 2, 
           loopTime = 2 
         },
         { 
           action = "walking.ksanim", 
-          start = vec3(966.45, 6.56, -164.01), 
-          finish = vec3(966.84, 6.39, -119.48), 
+          start = vec3(966.26, 6.54, -175.08), 
+          finish = vec3(966.75, 6.39, -130.45), 
           direction = vec3(0, 0, 1), 
-          duration = 50, 
+          duration = 56, 
           loopTime = 2 
         },
         { 
           action = "turn180.ksanim", 
-          start = vec3(966.84, 6.39, -119.48), 
-          finish = vec3(966.84, 6.39, -119.48), 
+          start = vec3(966.75, 6.39, -130.45), 
+          finish = vec3(966.75, 6.39, -130.45), 
           direction = vec3(0, 0, 1), 
           duration = 2, 
           loopTime = 2 
@@ -423,8 +423,8 @@
       actions = {
         { 
           action = "drinkf.ksanim", 
-          start = vec3(966.03, 6.37, -114.29), 
-          finish = vec3(966.03, 6.37, -114.29), 
+          start = vec3(966.06, 6.36, -124.22), 
+          finish = vec3(966.06, 6.36, -124.22), 
           direction = vec3(-1, 0, 0), 
           duration = 20, 
           loopTime = 20 
@@ -436,8 +436,8 @@
       actions = {
         { 
           action = "talking2.ksanim", 
-          start = vec3(965.28, 6.37, -113.23), 
-          finish = vec3(965.28, 6.37, -113.23), 
+          start = vec3(965.4, 6.35, -122.7), 
+          finish = vec3(965.4, 6.35, -122.7), 
           direction = vec3(0, 0, -1), 
           duration = 20, 
           loopTime = 10 
@@ -449,80 +449,80 @@
       actions = {
         { 
           action = "talking1.ksanim", 
-          start = vec3(964.31, 6.37, -113.93), 
-          finish = vec3(964.31, 6.37, -113.93), 
+          start = vec3(964.07, 6.36, -122.92), 
+          finish = vec3(964.07, 6.36, -122.92), 
           direction = vec3(1, 0, 0), 
           duration = 8, 
           loopTime = 8 
         },
         { 
           action = "walking.ksanim", 
-          start = vec3(964.31, 6.37, -113.93), 
-          finish = vec3(963.26, 6.36, -111.48), 
+          start = vec3(964.07, 6.36, -122.92), 
+          finish = vec3(963.19, 6.34, -120.22), 
           direction = vec3(-0.5, 0, 1), 
           duration = 3, 
           loopTime = 2 
         },
         { 
           action = "walking.ksanim", 
-          start = vec3(963.26, 6.36, -111.48), 
-          finish = vec3(963.32, 6.31, -98.81), 
+          start = vec3(963.19, 6.34, -120.22), 
+          finish = vec3(963.4, 6.3, -107.76), 
           direction = vec3(0, 0, 1), 
           duration = 15, 
           loopTime = 2 
         },
         { 
           action = "walking.ksanim", 
-          start = vec3(963.32, 6.31, -98.81), 
-          finish = vec3(964.97, 6.31, -98.46), 
+          start = vec3(963.4, 6.3, -107.76), 
+          finish = vec3(964.72, 6.3, -107.81), 
           direction = vec3(1, 0, 0), 
           duration = 2, 
           loopTime = 2 
         },
         { 
           action = "walking.ksanim", 
-          start = vec3(964.97, 6.31, -98.46), 
-          finish = vec3(965.02, 6.32, -99.95), 
+          start = vec3(964.72, 6.3, -107.81), 
+          finish = vec3(964.64, 6.3, -109.23), 
           direction = vec3(0, 0, -1), 
           duration = 2, 
           loopTime = 2 
         },
         { 
           action = "standing.ksanim", 
-          start = vec3(965.02, 6.32, -99.95), 
-          finish = vec3(965.02, 6.32, -99.95), 
+          start = vec3(964.64, 6.3, -109.23), 
+          finish = vec3(964.64, 6.3, -109.23), 
           direction = vec3(0, 0, -1), 
           duration = 10, 
           loopTime = 10 
         },
                 { 
           action = "walking.ksanim", 
-          start = vec3(965.02, 6.32, -99.95), 
-          finish = vec3(964.97, 6.31, -98.46), 
+          start = vec3(964.64, 6.3, -109.23), 
+          finish = vec3(964.72, 6.3, -107.81), 
           direction = vec3(0, 0, 1), 
           duration = 2, 
           loopTime = 2 
         },
         { 
           action = "walking.ksanim", 
-          start = vec3(964.97, 6.31, -98.46), 
-          finish = vec3(963.32, 6.31, -98.81), 
+          start = vec3(964.72, 6.3, -107.81), 
+          finish = vec3(963.4, 6.3, -107.76), 
           direction = vec3(-1, 0, 0), 
           duration = 2, 
           loopTime = 2 
         },
         { 
           action = "walking.ksanim", 
-          start = vec3(963.32, 6.31, -98.81), 
-          finish = vec3(963.26, 6.36, -111.48), 
+          start = vec3(963.4, 6.3, -107.76), 
+          finish = vec3(963.19, 6.34, -120.22), 
           direction = vec3(0, 0, -1), 
           duration = 15, 
           loopTime = 2 
         },
         { 
           action = "walking.ksanim", 
-          start = vec3(963.26, 6.36, -111.48), 
-          finish = vec3(964.31, 6.37, -113.93), 
+          start = vec3(963.19, 6.34, -120.22), 
+          finish = vec3(964.07, 6.36, -122.92), 
           direction = vec3(0.5, 0, -1), 
           duration = 3, 
           loopTime = 2 
@@ -534,8 +534,8 @@
       actions = {
         { 
           action = "phonef.ksanim", 
-          start = vec3(965.61, 6.28, -90.52), 
-          finish = vec3(965.61, 6.28, -90.52), 
+          start = vec3(965.27, 6.27, -100.15), 
+          finish = vec3(965.27, 6.27, -100.15), 
           direction = vec3(0, 0, 1), 
           duration = 20, 
           loopTime = 20 
@@ -547,8 +547,8 @@
       actions = {
         { 
           action = "phonef.ksanim", 
-          start = vec3(966.21, 6.27, -88.4), 
-          finish = vec3(966.21, 6.27, -88.4), 
+          start = vec3(966.12, 6.26, -99.11), 
+          finish = vec3(966.12, 6.26, -99.11), 
           direction = vec3(-1, 0, 0), 
           duration = 16, 
           loopTime = 16 
@@ -560,8 +560,8 @@
       actions = {
         { 
           action = "talking1f.ksanim", 
-          start = vec3(965.95, 6.26, -86.7), 
-          finish = vec3(965.95, 6.26, -86.7), 
+          start = vec3(965.64, 6.25, -97.16), 
+          finish = vec3(965.64, 6.25, -97.16), 
           direction = vec3(0, 0, -1), 
           duration = 16, 
           loopTime = 8 
