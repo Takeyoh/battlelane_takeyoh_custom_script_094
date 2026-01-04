@@ -172,12 +172,16 @@ function script.update(dt)
     ac.debug("largeDistance",largeDistance)
     if daikokuAreaFlag == true and largeDistance > daikokuAreaRadius then
         daikokuAreaFlag = false
+    elseif daikokuAreaFlag == false and largeDistance < daikokuAreaRadius and sp.y < 10 then
+        daikokuAreaFlag = true
     elseif areaCheck == false then
         for i,checkpoint in ipairs(checkPoints) do
             local distance = sp:distance(checkpoint)
             if distance < checkPointRadius then
-                daikokuAreaFlag = not daikokuAreaFlag
-                areaCheck = true
+                if not (daikokuAreaFlag and checkpoint.y < 10) then
+                    daikokuAreaFlag = not daikokuAreaFlag
+                    areaCheck = true
+                end
             end
         end
     end
