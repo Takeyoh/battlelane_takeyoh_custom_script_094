@@ -120,12 +120,10 @@ local blinker = {}
 local leftLane = -3.9
 local rightLane = 3.9
 local centerLane = 0
-local leftWidth = -1.5
-local rightWidth = 1.5
+local leftWidth = -1.8
+local rightWidth = 1.8
 
 local rivalMaxSpeed = 500
-
-local progressPerMeter = 1/(ac.getSim().trackLengthM)
 
 ---- 起動時処理
 -- ライバル車と重量車のチェックと残りトラフィック台数の確認
@@ -150,7 +148,7 @@ for i = 0, totalCars - 1 do
         lanechange = false,
         fixedOffset = nil,
         aggression = 0,
-        steerRatio = 2.5,
+        steerRatio = 3.0,
         ailevel = 1,
     }
 
@@ -606,7 +604,7 @@ function selectLane(carID,side,distance)
         if i ~= carID and carsStatus[i].isParking == false then
             local targetCar = carsStatus[i]
             local targetCarDistance = carsDistance[carID]['car'..i]
-            if not (carsStatus[i].lane == "challenger" and carsStatus[i].speed > 200 ) 
+            if not (carsStatus[i].lane == "challenger" and carsStatus[i].speed > 150 ) 
               or carsStatus[carID].battle > 0
               or carsStatus[i].isPolice then
                 if targetCarDistance > -1*(selfCar.lengthRear + targetCar.lengthFront) 
@@ -687,7 +685,7 @@ function selectLane(carID,side,distance)
                 end
             else
                 if centerCar ~= carID 
-                  and (carsStatus[centerCar].speed - selfCar.speed < -10) 
+                  and (carsStatus[centerCar].speed - selfCar.speed < -30) 
                   then
                     offset = rightLane
                 else
@@ -697,7 +695,7 @@ function selectLane(carID,side,distance)
         elseif carsStatus[carID].lane == "right" then
             if side.y > rightLane then
                 if rightCar ~= carID 
-                  and (carsStatus[rightCar].speed - selfCar.speed < -10) 
+                  and (carsStatus[rightCar].speed - selfCar.speed < -30) 
                 then
                     offset = centerLane
                 else
@@ -708,7 +706,7 @@ function selectLane(carID,side,distance)
             end
         else
             if centerCar ~= carID 
-              and (carsStatus[centerCar].speed - selfCar.speed < -10) 
+              and (carsStatus[centerCar].speed - selfCar.speed < -30) 
               then
                 offset = rightLane
             else

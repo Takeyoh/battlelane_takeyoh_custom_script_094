@@ -91,7 +91,7 @@ function brakeControl(carsStatus,start,dt)
                 -- 前方車両の距離に応じてブレーキ処理（走行方向と逆向きに力を加える）
                 if frontCar ~= i then
                     if minDistance < 2 and selfCar.speed > 10 then
-                        physics.addForce(i,vec3(0,0,0),true,vec3(0,0,-300000*math.max(0,2-minDistance)),true)                
+                        physics.addForce(i,vec3(0,0,0),true,vec3(0,0,-100000*math.max(0,2-minDistance)),true)                
                     elseif carsStatus[frontCar].speed - selfCar.speed < 0 then
                         local brakeThreshold
                         if carsStatus[i].isPolice and frontCar == 0 then
@@ -99,7 +99,7 @@ function brakeControl(carsStatus,start,dt)
                         else
                             brakeThreshold = -carsStatus[i].speed/5
                         end
-                        physics.addForce(i,vec3(0,0,0),true,vec3(0,0,150*(checkDistance-minDistance)*math.min(brakeThreshold,(carsStatus[frontCar].speed - selfCar.speed))),true)
+                        physics.addForce(i,vec3(0,0,0),true,vec3(0,0,180*(checkDistance-minDistance)*math.min(brakeThreshold,(carsStatus[frontCar].speed - selfCar.speed))),true)
                     end
                     brake = true
                 end
@@ -161,7 +161,7 @@ function brakeControl(carsStatus,start,dt)
                     end
                     --トラフィック用車両の最高速度を強制的に制限
                     if brake == false and selfCar.speed > 5 and carsDistance[0]['car'..i] > 0 and carsDistance[0]['car'..i] < 1000 then
-                        physics.addForce(i,vec3(0,0,0),true,vec3(0,0,2*carsStatus[i].mass*( selfCar.setSpeed - selfCar.speed)),true)
+                        physics.addForce(i,vec3(0,0,0),true,vec3(0,0,carsStatus[i].mass*( selfCar.setSpeed - selfCar.speed)),true)
                     end
 
                     -- 前方に車が割り込んだら減速して車間を保つ

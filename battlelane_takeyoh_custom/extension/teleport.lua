@@ -22,15 +22,15 @@ local point2 = {
    { position = vec3(2985.08, 18.65, -9124.49), direction = vec3(0.6,0,-1)},  -- edobashi JCT
    { position = vec3(2763.77, -0.762, -8715.49), direction = vec3(-0.6,0,1)},  -- edobashi JCT
    { position = vec3(1339.26, 14.84, -5861.52), direction = vec3(0,0,-1)},  -- hamasakibashi JCT
+   { position = vec3(3119.37, -2.67, 4147.48), direction = vec3(-1,0,-0.8)},  -- haneda (west)
+   { position = vec3(4168.08, -9.39, 8456.03), direction = vec3(0.5,0,-1)},  -- ukishima Gate
    { position = vec3(-179.7, 6.06, 1465.16), direction = vec3(0.5,0,1)},  -- heiwajima gate
    { position = vec3(-326.69, 15.19, 6081.69), direction = vec3(0,0,-1)},  -- daishi gate
    { position = vec3(-348.78, 16.09, 6004.29), direction = vec3(-0.3,0,1)},  -- daishi gate (north)
    { position = vec3(-6485.46, 10.93, 10935.31), direction = vec3(1,0,-0.5)},  -- namamugi JCT
    { position = vec3(-6158.66, 19.48, 13680.83), direction = vec3(-0.2,0,-1)},  -- daikoku PA JCT
-   { position = vec3(4110.59, -8.44, 8480.85), direction = vec3(-0.7,0,1)},  -- ukishima Gate (north)
-   { position = vec3(4037.63, -6.67, 8653.18), direction = vec3(0.8,0,-1)},  -- ukishima Gate
+   { position = vec3(3758.58, -10.46, 8884.39), direction = vec3(-1,0,0.8)},  -- ukishima Gate (north)
    { position = vec3(905.144, 6.48401, -105.988), direction = vec3(0,0,1)},  -- oi Gate
-   { position = vec3(3119.37, -2.67, 4147.48), direction = vec3(-1,0,-0.8)},  -- haneda (west)
 }
 
 local srp094PTB = {
