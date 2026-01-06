@@ -190,11 +190,3 @@ function calcDots()
     end
     return minDot
 end
-
-if ac.getPatchVersionCode() >= 3465 then
-    ac.onCarCollision(-1, function(carIndex)
-        if carsStatus[carIndex].lane ~= "challenger" then
-            physics.setAIStopCounter(carIndex, 1)
-        end
-    end)
-end
